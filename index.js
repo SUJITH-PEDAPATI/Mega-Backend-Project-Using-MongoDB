@@ -1,7 +1,8 @@
 import express from 'express'
+import 'dotenv/config'
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Accepting the data from the frontend as well'
 app.use(express.json())
